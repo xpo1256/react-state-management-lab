@@ -14,3 +14,10 @@ li {
   border: whitesmoke 3px solid;
   border-radius: 8px;
 }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px,1fr)); gap: 1rem; }
+.card-sm { background: var(--panel); border: 1px solid #1f2937; border-radius: 10px; overflow: hidden; }
+.card-sm img { width: 100%; aspect-ratio: 2/3; object-fit: cover; }
+.backdrop { position: fixed; inset: 0; background: rgba(0,0,0,.6); display: grid; place-items: center; padding: 1rem; }
+.modal { background: #0b1324; border: 1px solid #1f2937; border-radius: 12px; max-width: 720px; width: 100%; padding: 1rem 1.25rem; }
+.close { float: right; font-size: 1.5rem; background: transparent; border: 0; color: var(--text); cursor: pointer; }
+.pager { display: flex; gap: .5rem; justify-content: center; margin: 1rem 0; }
